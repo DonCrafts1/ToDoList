@@ -1,0 +1,100 @@
+body {
+    background-color: #111;
+}
+
+#topHeader{
+    background-color: #737;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* The "parent > *" refers to only the direct children of the parent! Cool! */
+#topContainer > * { 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#topContainer{
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+#toBeImplemented{
+    background-color: #0000AA;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 5;
+}
+
+#addtask{
+    background-color: #550055;
+    float: left;
+    height: 180px;
+    flex: 3;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#addtask input {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+#addtaskerror{
+    color: red;
+}
+
+#YTLink{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#entirecontainer{
+    /*border: 1px solid #AAAAAA;*/
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    /*align-items: flex-start;*/
+    padding: 10px;
+}
+
+#entirecontainer input {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+#taskcontainer{
+    background-color: #202;
+    padding: 10px;
+    border-radius: 20px;
+    height: auto;
+    overflow: auto;
+}
+
+#taskcontainer > * {
+    margin: 10px;
+}
+
+.task{
+    background-color: #550055;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    height: auto;
+    width: 30.3%;
+    font-size: 15px;
+    padding: 10px;
+    float: inline-start;
+}
+
+.task button {
+    margin: 10px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
