@@ -142,11 +142,14 @@ function addNewTaskDiv(titleStr, bodyStr, date, id){
 
 function displayData(){
     taskContainerTxt.value = "Tasks";
+
+    //Erase existing divs
     let tempList = taskContainer.getElementsByClassName("task");
-    console.log("This is templist: ",tempList)
-    for (var i = 0; i < tempList.length; i++){
-        taskContainer.removeChild(tempList[i]);
-    }
+    tempList = Array.from(tempList);
+    tempList.forEach(element => {
+        taskContainer.removeChild(element);
+    });
+
     //Get cursor (iterate over all items in db, schema, objectStore notes_os)
     const objectStore = db.transaction("notes_os").objectStore("notes_os")
     var hasElements = false;
