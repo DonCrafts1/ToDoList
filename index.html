@@ -2,21 +2,66 @@
 <html>
 <head> 
     <link rel="stylesheet" href="style.css">
+    <script src = "script.js"></script>
     <title> Epic To-Do List </title>
 </head>
 <body>
 
-<h1> Hello everyone! </h1>
-<h2> I haven't done any web dev in a long time.. so let's see how this goes!</h2>
-<p> 
-    I want to implement these features: <br>
-    <del>- Adding and removing events <br></del>
-    - Date and time for events <br>
-    - Show time remaining for each events <br>
-    - Organising events into categories <br>
-</p>
+<div id = "topHeader">
+    <!-- <h1> Hello everyone! </h1> -->
+    <h1> Welcome to Don's To-Do App!</h1>
+    <h2> I haven't done any web dev in a long time.. so let's see how this goes!</h2>
+</div>
+<br>
+<div id = "topContainer">
+    <div id = "toBeImplemented">
+        <p> 
+            I want to implement these features: <br>
+            <del>- Adding and removing events <br></del>
+            - Date and time for events <br>
+            - Show time remaining for each events <br>
+            - Organising events into categories <br>
+        </p>
+        <a href="https://youtube.com/@DonCrafts1/" target="_blank" id = "YTLink">Visit my YT channel!</a>
+    </div>
 
-<a href="https://youtube.com/@DonCrafts1/" target="_blank">Visit my YT channel!</a>
+    <div id = "addtask">
+        <form id = "addtaskform">
+            <p style="text-align: center; font-weight: bold;">Add Task</p>
+            <label for="titleInput"> Title: </label>
+            <input id="titleInput" name="titleInput"> </input>
+            <br>
+            <br>
+            <label for="bodyInput"> Description: </label>
+            <br>
+            <input id="bodyInput" name="bodyInput"> </input>
+
+            <!-- class="textInput"  -->
+            <br>
+            <input type="datetime-local" id="dateInput" name="dateInput" style="float:right; font-family: 'Courier New';"> </input>
+            <br>
+            <button form = "addtaskform" style = "font-family: 'Courier New'" >Add Event</button>
+            <!-- Remember either use onclick() here or use onclick/addeventlistener in the JavaScript -->
+            <!-- type="button" onclick="addData()" -->
+            <!-- having [type = "button"] means the button no longer is a "submit button" for the form it's in -->
+            <p id = "addtaskerror"> Enter a valid time! </p>
+        </form>
+    </div>
+</div>
+
+<br>
+<!-- <div>
+    <button type="button" onclick="testFunction()">Test Button</button>
+    <p id = "demo" style="color:white"></p>
+</div> -->
+
+<div id = "entirecontainer">
+    <div id = "taskcontainer">
+        <h1 id = "taskcontainertxt" style="text-align: center;"> Tasks: </h1>
+    </div>
+    
+</div>
+
 
 </body>
 </html>
