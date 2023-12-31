@@ -60,6 +60,7 @@ body {
     /*border: 1px solid #AAAAAA;*/
     font-family:'Courier New', Courier, monospace;
     color: white;
+    margin-top: 10px;
     /*align-items: flex-start;*/
     padding: 10px;
 }
