@@ -27,7 +27,8 @@ body {
 
 #toBeImplemented{
     background-color: #0000AA;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
     border-radius: 20px;
     flex: 5;
 }
