@@ -135,7 +135,8 @@ function addNewTaskDiv(titleStr, bodyStr, date, id){
     editBtn.textContent = "Edit";
 
     deleteBtn.addEventListener("click", deleteItem)
-    //Add savebtn (edit essentially) later
+    //Add savebtn (edit essentially) later, for now disable:
+    editBtn.disabled = true;
 
     taskContainerTxt.innerText = "Tasks: ";
 }
