@@ -92,6 +92,10 @@ body {
     float: inline-start;
 }
 
+.task p {
+    overflow: auto;
+}
+
 .task button {
     margin: 10px;
     float: right;
