@@ -27,7 +27,8 @@ body {
 
 #toBeImplemented{
     background-color: #0000AA;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
     border-radius: 20px;
     flex: 5;
 }
@@ -60,6 +61,7 @@ body {
     /*border: 1px solid #AAAAAA;*/
     font-family:'Courier New', Courier, monospace;
     color: white;
+    margin-top: 10px;
     /*align-items: flex-start;*/
     padding: 10px;
 }
@@ -90,6 +92,10 @@ body {
     font-size: 15px;
     padding: 10px;
     float: inline-start;
+}
+
+.task p {
+    overflow: auto;
 }
 
 .task button {
